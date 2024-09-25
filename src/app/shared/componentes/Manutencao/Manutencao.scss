@@ -1,0 +1,81 @@
+.manutencao{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+
+    @media (max-width:1200px) {
+        height: min-content;
+       }
+
+    img{
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+
+        @media (max-width:1200px) {
+            height: 300px;
+            position: absolute;
+            top: 0;
+            opacity: 1;
+           }
+    }
+
+    &__content{
+        opacity: 1;
+        z-index: 10;
+        position: absolute;
+        left: 58%;
+        padding-right: 5.6vw;
+        height: 100%;
+        margin-top: 11vw;
+
+        @media (max-width:1200px) {
+            padding: 10px;
+            left: 0;
+            padding-right: 1rem;
+            position: static;
+            margin-top: 0;
+           }
+
+        .title--big{
+            padding-bottom: 2rem;
+
+            
+        @media (max-width:1200px) {
+            padding-top: 20rem;
+           }
+        }
+
+        .text{
+
+            line-height: 23px;
+        }
+
+        &__info{
+            margin-top: 3rem;
+
+
+            &__item{
+                background-color: rgb(255, 255, 255);
+                border-radius: 30px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                @media (max-width:1200px) {
+                    width: 95%;
+
+                }
+
+                p.text{
+                    height: 100%;
+                    padding-left: .5rem;
+                    color: black;
+                }
+            }
+          
+
+        }
+    }
+}
+

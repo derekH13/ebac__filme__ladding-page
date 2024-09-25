@@ -1,0 +1,64 @@
+.atores{
+    padding: 5.6vw;
+    margin-top: 5rem;
+    height: 100vh;
+
+    @media (max-width:1200px) {
+        width: 95%;
+        margin: 5rem auto;
+        padding: 0px;
+    }
+
+
+    &__items{
+        width: 100%;
+
+        li{
+            display: flex;
+            margin: 3rem 0px;
+            
+            
+
+            @media (max-width:1200px) {
+                flex-direction: column;
+                
+            }
+
+
+            div{
+                max-width: 50%;
+                padding-left: 1rem;
+
+                @media (max-width:1200px) {
+                    max-width: 100%;
+                    padding: 0px;
+                    
+                }
+            }
+
+            .title--small{
+                margin: .5rem 0px;
+            }
+
+
+            img{
+                max-height: 200px;
+                max-width: 200px;
+                width: 100%;
+
+                @media (max-width:1200px) {
+                    max-height: 500px;
+                    
+                    
+                }
+
+
+                
+            }
+        }
+    }
+}
+
+.alinhar__atores{
+    position: absolute;
+}

@@ -17,7 +17,7 @@ function compilaSass(){
 
 
 
-
+exports.default = gulp.parallel(compilaSass);
 
 exports.watch = function(){
     gulp.watch('./src/app/shared/componentes/**/*.scss', gulp.parallel(compilaSass))
